@@ -1,6 +1,6 @@
 import { SearchBar } from "../searchbar";
 
-export default async function Keyword({ searchParams }) {
+export default async function Keyword({ searchParams }: any) {
   const sp = new URLSearchParams(searchParams);
   return (
     <>

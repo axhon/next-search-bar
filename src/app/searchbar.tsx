@@ -12,7 +12,7 @@ export function SearchBar({ defaultValue }: Props) {
       return;
     }
     const searchParams = new URLSearchParams();
-    searchParams.set("q", query);
+    searchParams.set("q", query.toString());
     redirect(`/keyword?${searchParams.toString()}`);
   }
   return (
